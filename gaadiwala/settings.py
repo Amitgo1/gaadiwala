@@ -32,6 +32,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home',
+    'about',
+    'service',
+    'shop',
+    'company',
+    'contactus',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +60,7 @@ ROOT_URLCONF = 'gaadiwala.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['home/templates'],
+        'DIRS': ['home/templates','about/templates','service/templates','shop/templates','company/templates','contactus/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
