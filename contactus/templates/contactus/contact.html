@@ -22,19 +22,20 @@
 
         <div class="col-md-6">
           <div class="contact_form-container">
-            <form action="">
+            <form method = "POST">
+               {% csrf_token %}
               <div>
-                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Name" name = "name">
               </div>
               <div>
-                <input type="email" placeholder="Your Email">
+                <input type="email" placeholder="Your Email" name = "email">
               </div>
               <div>
-                <input type="text" placeholder="Your Phone">
+                <input type="text" placeholder="Your Phone" name = "phone">
               </div>
 
               <div>
-                <input type="text" class="message_input" placeholder="Message">
+                <input type="text" class="message_input" placeholder="Message" name = "message">
               </div>
               <div class="d-flex justify-content-end">
                 <button type="submit " class="">
